@@ -1,0 +1,34 @@
+.table.dataTable thead th {
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+
+table.table-bordered.dataTable thead th,
+table.table-bordered.dataTable tbody td {
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+
+table.multiple-column tbody td {
+  .btn-group {
+    .action {
+      float: left;
+      clear: both;
+
+      a {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.dataTables_wrapper {
+  .dataTables_paginate {
+    padding-top: 0 !important;
+
+    .pagination-container {
+      margin: 0;
+    }
+  }
+}

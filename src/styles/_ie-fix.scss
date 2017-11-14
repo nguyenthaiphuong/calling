@@ -1,0 +1,13 @@
+/* Edge Browser 12+ for Windows 10 (all MS Edge)  */
+@supports (-ms-ime-align:auto) {
+  html {
+    display: block !important;
+  }
+}
+
+/* IE10+ specific styles go here */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html {
+    display: block !important;
+  }
+}

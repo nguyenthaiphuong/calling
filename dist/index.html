@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="Calling">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="/icons/favicon-57.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="/icons/favicon-72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="/icons/favicon-114.png"/>
+        <link rel="apple-touch-icon" sizes="144x144" href="/icons/favicon-144.png"/>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="0"/>
+        <title ng-bind="$root.pageTitle"></title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" type="text/css" />
+        <link rel="stylesheet" href="/style.css" type="text/css" />
+        <base href="/" />
+    </head>
+<body ng-controller="AppController as AppCtrl" ng-class="AppCtrl.bodyClass()" id="scroll-top">
+    <div class="wrapper">
+        <div ng-spinner-bar class="page-spinner-bar">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+        <ui-view></ui-view>
+    </div>
+    <script type="text/javascript" src="/main.js"></script>
+    <script type="text/javascript" src="/app.templates.js"></script>
+</body>
+</html>
